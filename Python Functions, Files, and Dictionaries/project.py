@@ -63,13 +63,12 @@ with open("project_twitter_data.csv") as twitter_data:
     for line in lines:
 # splitting tweets line by line
         words = line.split(",")
-# making all tweets into tupples and appending them to tweet_texts
-        for tweets in words[0:1]:
-            tweet_text.append(tweets)
+#  appending tweets to tweet_texts
+        tweet_text.append(words[0].strip())
 # appending the number of retweets to tweet_retweets
-            tweet_retweets.append(words[1].strip())
+        tweet_retweets.append(words[1].strip())
 # appending then number of replies to tweet_replies
-            tweet_replies.append(words[2].strip())
+        tweet_replies.append(words[2].strip())
 #---------------------------------------------------------------
 # calculating positive scores and negative scores for each tweet
 for tweets in tweet_text:
