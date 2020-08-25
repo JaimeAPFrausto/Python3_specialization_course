@@ -81,9 +81,6 @@ for tweets in tweet_text:
 for a,b in zip(positive_scores,negative_scores):
     net_scores.append(a-b)
 #---------------------------------------------------------------------------
-print(positive_scores)
-print(negative_scores)
-print(net_scores)
 # writing to resulting_data.csv file
 with open("resulting_data.csv","w") as result_data:
 # writing headers and data
