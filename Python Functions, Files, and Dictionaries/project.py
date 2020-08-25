@@ -73,15 +73,13 @@ with open("project_twitter_data.csv") as twitter_data:
 #---------------------------------------------------------------
 # calculating positive scores and negative scores for each tweet
 for tweets in tweet_text:
-# setting positive as the number of positive words in a tweet. Returned value is appended to positive_scores
-    positive = get_pos(tweets)
-    positive_scores.append(positive)
-# setting negative as the number of negative words in a tweet. Returned value is appended to negative_scores
-    negative = get_neg(tweets)
-    negative_scores.append(negative)
+# for each tweet, returned value is appended to positive_scores
+    positive_scores.append(get_pos(tweets))
+# for each tweet, returned value is appended to negative_scores
+    negative_scores.append(get_neg(tweets))
 # calculating the net scores from positive_scores and negative_scores lists
 for a,b in zip(positive_scores,negative_scores):
-    net_scores.append(str(a-b))
+    net_scores.append(a-b)
 #---------------------------------------------------------------------------
 print(positive_scores)
 print(negative_scores)
