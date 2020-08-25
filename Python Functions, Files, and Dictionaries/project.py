@@ -11,7 +11,7 @@ def strip_punctuation(string):
 def get_pos(str_sentences):
 # making sentences lower case
     str_sentences = str_sentences.lower()
-# run each line through the strip definition
+# run line through the strip definition
     lines = strip_punctuation(str_sentences)
 # counting variable
     count_positive = 0
