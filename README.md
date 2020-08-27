@@ -1,5 +1,6 @@
 # Python3_specialization_course
 University of Michigan Python3 Python 3 Programming Specialization Course
+
 About(From https://www.coursera.org/specializations/python-3-programming):
 
 This specialization teaches the fundamentals of programming in Python 3. We will begin at the beginning, with variables, conditionals, and loops, and get to some intermediate material like keyword parameters, list comprehensions, lambda expressions, and class inheritance.
